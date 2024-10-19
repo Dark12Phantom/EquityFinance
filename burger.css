@@ -1,0 +1,93 @@
+.burger {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+    position: relative;
+}
+
+.burger span {
+    background-color: #a5a345;
+    width: 40px;
+    height: 2px;
+    border-radius: 20px;
+    z-index: 2;
+    transition: all 0.3s ease;
+    position: absolute;
+}
+
+.burger span:nth-child(1) {
+    top: 5px;
+}
+
+.burger span:nth-child(2) {
+    top: 15px;
+}
+
+.burger span:nth-child(3) {
+    top: 25px;
+}
+
+.burger.active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 15px;
+}
+
+.burger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 15px;
+}
+
+@media screen and (max-width: 810px) {
+    .burger {
+        display: flex;
+    }
+
+    #nav-buttons {
+        display: none;
+        position: absolute;
+        top: 110%;
+        width: 30%;
+        right: 0;
+        height: 500px;
+        z-index: 1;
+    }
+
+    #nav-buttons.show {
+        display: block;
+        flex-direction: column;
+        left: 0;
+        background-color: #000000;
+    }
+
+    #nav-buttons ul {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #nav-buttons ul li {
+        padding: 10px 0;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 811px) {
+    .burger {
+        display: none;
+    }
+
+    #nav-buttons {
+        flex-grow: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+}

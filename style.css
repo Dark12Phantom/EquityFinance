@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: #2d5c46;
+    font-family: 'Roboto', sans-serif;
+    min-height: 200vh;
+    box-shadow: inset 0 10px 0 0 white;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background: #2d5c46;
+    z-index: 1;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2em;
+    padding: 0;
+    align-items: center;
+    position: relative;
+}
+
+#logo img {
+    width: 90px;
+    vertical-align: center;
+    cursor: pointer;
+}
+
+#nav-buttons ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+#nav-buttons ul li {
+    margin: 0 1rem;
+    font-size: 1.4em;
+    cursor: pointer;
+    padding: 3px;
+}
+
+#nav-buttons ul li a {
+    text-decoration: none;
+    color: #a5a345;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+#nav-buttons ul li a.active {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.acc-container svg {
+    display: block;
+    width: 20px;
+}
+
+.acc-container {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.acc-container .profile,
+.acc-container .login-register {
+    display: none;
+}
+
+.profile a,
+.login-register a {
+    text-decoration: none;
+    color: #a5a345;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.profile.show,
+.login-register.show {
+    display: block;
+}
+
+.form {
+    display: flex;
+    margin: auto auto;
+    width: 100%;
+}
+
+main {
+    display: block;
+    padding-top: 0;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    height: 100vh;
+    margin: 1rem;
+    background-color: #fff;
+}
+
+footer {
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.def {
+    padding: 1.2rem;
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo {}
+
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-list .icons {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+}
+
+.icons p a svg {
+    height: 30px;
+}
+
+.cpr {
+    align-items: center;
+    text-align: center;
+}
