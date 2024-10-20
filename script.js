@@ -46,4 +46,21 @@ document.addEventListener('DOMContentLoaded', () => {
         burger.classList.toggle('active');
         navButtons.classList.toggle('show');
     });
+
+    const text = "Welcome to Equity Finance";
+    const h1 = document.querySelector('.typing');
+    const cursor = document.querySelector('.cursor');
+    let index = 0;
+
+    function type() {
+        if (index < text.length) {
+            h1.textContent += text.charAt(index);
+            index++;
+            setTimeout(type, 100);
+        } else {
+            cursor.style.display = 'none';
+        }
+    }
+
+    type();
 });
