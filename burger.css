@@ -84,17 +84,20 @@
     #hero {
         font-size: 1.2em;
         font-weight: 900;
+        height: max-content;
     }
 
     #about {
         display: block;
         font-size: 1.5em;
         margin-top: -100px;
+        height: max-content;
     }
 
     #services {
         display: block;
         font-size: 1.2em;
+        height: max-content;
     }
 
     .services {
@@ -103,6 +106,7 @@
 
     #contact h1 {
         font-size: 2em;
+        height: max-content;
     }
 
     .subscribe a {
@@ -114,20 +118,29 @@
     #contact {
         font-size: 1.2em;
         font-weight: 900;
+        height: max-content;
     }
 
     .form form {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 100%;
+        padding: 0;
     }
 
     .message {
-        width: 80vw;
+        flex-grow: 1;
+        width: 100%;
     }
 
     .info1,
     .info2,
     .info3 {
-        width: 85vw;
+        flex-grow: 1;
+        width: 100%;
     }
 
     .info1 input,
