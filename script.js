@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const accSvg = document.querySelector('.acc-svg');
     const profile = document.querySelector('.profile');
     const loginRegister = document.querySelector('.login-register');
+    const burger = document.querySelector('.burger');
+    const navButtons = document.getElementById('nav-buttons');
 
     window.addEventListener('scroll', () => {
         let current = '';
@@ -38,13 +40,25 @@ document.addEventListener('DOMContentLoaded', () => {
     profile.classList.remove('show');
     loginRegister.classList.remove('show');
 
-    const burger = document.querySelector('.burger');
-
-    const navButtons = document.getElementById('nav-buttons');
-
     burger.addEventListener('click', () => {
         burger.classList.toggle('active');
         navButtons.classList.toggle('show');
+    });
+
+    // Collapse burger menu when clicking outside
+    document.addEventListener('click', (event) => {
+        if (!burger.contains(event.target) && !navButtons.contains(event.target)) {
+            burger.classList.remove('active');
+            navButtons.classList.remove('show');
+        }
+    });
+
+    // Collapse burger menu when clicking any nav link
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            burger.classList.remove('active');
+            navButtons.classList.remove('show');
+        });
     });
 
     const text = "Welcome to Equity Finance";
