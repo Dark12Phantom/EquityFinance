@@ -1,0 +1,41 @@
+section .plans {
+    padding: 0;
+    margin: 0;
+}
+
+.plans .container {
+    display: flex;
+}
+
+.col {
+    border: #ff9f1c solid 1px;
+    margin: 2em;
+    border-radius: 20px;
+    background: #fff;
+}
+
+.col h3 {
+    font-size: 2em;
+    color: #2ec4b6;
+}
+
+.col:hover {
+    transform: scale(1.1);
+}
+
+.col ul {
+    padding-left: 20px;
+}
+
+.col ul li {
+    list-style-type: none;
+    position: relative;
+    padding-left: 20px;
+}
+
+.col ul li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: green;
+}

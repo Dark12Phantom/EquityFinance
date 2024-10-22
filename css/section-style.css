@@ -1,0 +1,242 @@
+section {
+    margin: 1rem;
+    padding: 20px;
+    height: fit-content;
+    padding-top: 100px;
+}
+
+section h1 {
+    color: #2ec4b6;
+}
+
+section h2 {
+    color: rgb(59, 59, 59);
+}
+
+section p {
+    color: rgb(59, 59, 59);
+}
+
+/* HOME */
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.def {
+    padding: 1.2rem;
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.def img {
+    width: 100%;
+    border-radius: 20px 10px 20px 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ABOUT */
+
+#about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    margin: 3rem;
+    gap: 10px;
+}
+
+#about p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about svg {
+    width: 30px;
+}
+
+/* SERVICES */
+
+#services {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 1.8fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "services services"
+        "investment automated";
+    justify-content: space-around;
+    align-content: space-around;
+    justify-items: center;
+    align-items: start;
+    padding: 0 100px;
+}
+
+
+.services {
+    grid-area: services;
+    padding: 0;
+    margin: 0;
+}
+
+.services svg {
+    width: 30px;
+}
+
+.investment {
+    grid-area: investment;
+}
+
+.automated {
+    grid-area: automated;
+}
+
+.subscribe a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* CONTACT */
+
+#contact {
+    padding: 0 100px;
+}
+
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-list .icons {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+}
+
+.icons p a svg {
+    height: 30px;
+}
+
+.cpr {
+    align-items: center;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    margin: auto auto;
+    width: 100%;
+}
+
+.form form {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 10px;
+    grid-template-areas:
+        "message info1"
+        "message info2"
+        "message info3";
+    margin: 20px auto auto auto;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.message {
+    grid-area: message;
+    height: 30vh;
+    width: 40vw;
+}
+
+.message textarea {
+    height: 25vh;
+    width: inherit;
+    resize: none;
+}
+
+.form form legend {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+}
+
+fieldset {
+    border: none;
+}
+
+.info1 {
+    grid-area: info1;
+    width: 35vw;
+}
+
+.info1 input {
+    height: 3vh;
+    width: 100%;
+}
+
+legend {
+    display: flex;
+}
+
+.info1 p {
+    margin: 0;
+    color: red;
+    margin-left: 3px;
+    font-size: 1em;
+}
+
+.info2 {
+    grid-area: info2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 35vw;
+}
+
+.info2 input {
+    height: 3vh;
+}
+
+.info3 {
+    grid-area: info3;
+    width: 35vw;
+    display: flex;
+}
+
+textarea,
+input {
+    border: solid #ff9f1c 1px;
+    border-radius: 10px;
+}
+
+input {
+    padding: 10px;
+}
+
+.info3 input {
+    margin: auto;
+    width: 15vw;
+    height: 50px;
+    border-radius: 30px;
+    font-family: 'Roboto', sans-serif;
+    border: #ff9f1c solid 1px;
+    background-color: #ff9f1c;
+    color: #ffffff;
+}

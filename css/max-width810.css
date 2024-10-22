@@ -1,0 +1,206 @@
+@media screen and (max-width: 810px) {
+    /* NAVIGATION */
+
+    .burger {
+        display: flex;
+    }
+
+    #nav-buttons {
+        display: none;
+        position: absolute;
+        top: 110%;
+        width: 100%;
+        right: 0;
+        height: max-content;
+        z-index: 1;
+        padding: 20px;
+        border-radius: 30px;
+    }
+
+    #nav-buttons.show {
+        display: block;
+        flex-direction: column;
+        right: 0;
+        background-color: #ff9f1c;
+    }
+
+    #nav-buttons ul {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #nav-buttons ul li {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    /* SECTIONS */
+
+    section {
+        margin: 0;
+        height: max-content;
+        width: 100vw;
+    }
+
+    /* HOME SECTION */
+    #hero h1 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    #hero h2 {
+        font-size: 1.4em;
+        text-align: center;
+    }
+
+    #hero .def {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    /* ABOUT SECTION */
+
+    #about {
+        margin: 0;
+        display: block;
+        padding: 5px;
+        margin-top: 50px;
+    }
+
+    #about h1 {
+        font-size: 2em;
+    }
+
+    #about p {
+        font-size: 1.5em;
+    }
+
+    /* SERVICES SECTION */
+
+    #services {
+        display: block;
+        margin: 0;
+        padding: 0 10px;
+        margin-top: 50px;
+    }
+
+    #services h1 {
+        font-size: 2em;
+    }
+
+    #services h2 {
+        color: #2ec4b6;
+        font-size: 1.6em;
+    }
+
+    #services p {
+        font-size: 1.5em;
+    }
+
+    #services a {
+        font-size: 1.3em;
+        color: #ff9f1c;
+        position: relative;
+    }
+
+    /* CONTACT SECTION */
+
+    #contact {
+        padding: 0;
+        margin-top: 50px;
+    }
+
+    #contact h1 {
+        font-size: 2em;
+    }
+
+    #contact p {
+        font-size: 1.5em;
+    }
+
+    .col .heading h3 {
+        font-size: 1.5rem;
+        color: #2ec4b6;
+    }
+
+    .form form {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    .message {
+        width: 100%;
+    }
+
+    .info1,
+    .info2,
+    .info3 {
+        width: 100%;
+    }
+
+    .info1 input,
+    .info2 input,
+    .info3 input {
+        height: 50px;
+    }
+
+    .form legend {
+        font-size: 0.3em;
+    }
+
+    /* FOOTER */
+
+    footer {
+        height: fit-content;
+    }
+
+    footer svg {
+        width: 20px;
+    }
+
+    footer .icons {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer p {
+        font-size: 0.8em;
+    }
+
+    /* PLANS PAGE */
+
+    .col {
+        width: 400px;
+        text-align: center;
+        height: 700px;
+    }
+
+    .plans .container {
+        flex-direction: column;
+        padding-top: 50px;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .profile a {
+        font-size: 1.1em;
+        padding-top: 30px;
+    }
+}

@@ -1,0 +1,27 @@
+.profile.show,
+.login-register.show {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    color: white;
+    height: max-content;
+    background: #ff9f1c;
+    width: 15em;
+    padding: 30px;
+    text-align: center;
+    border-radius: 30px;
+    border: 0.1px solid #ff9f1c;
+}
+
+.profile,
+.login-register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile a,
+.login-register {
+    font-size: 1.1em;
+    padding-top: 30px;
+}

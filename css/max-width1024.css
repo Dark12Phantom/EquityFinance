@@ -1,0 +1,17 @@
+@media screen and (min-width: 811px) {
+    .burger {
+        display: none;
+    }
+
+    #nav-buttons {
+        flex-grow: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #about {
+        font-size: 2rem;
+        align-items: start;
+    }
+
+}
