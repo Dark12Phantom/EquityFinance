@@ -66,8 +66,8 @@
                     <input type="submit" value="Login">
                 </div>
                 <hr>
-                <div class="log ask">
-                    <p>No account? | <a href="#register">Create an account</a></p>
+                <div id="ask1" class="log ask">
+                    <p>No account? | <span id="ask-register">Create an account</span></p>
                 </div>
             </form>
         </section>
@@ -79,7 +79,7 @@
                     <input type="text" name="fname" id="fname" placeholder="First Name">
                     <label for="lname">Last Name: </label>
                     <input type="text" name="lname" id="lname" placeholder="Last Name">
-                    <label for="birthdate">Birthdate: </label>
+                    <label for="birthdate">Birth Date: </label>
                     <input type="date" name="birthdate" id="birthdate">
                 </div>
                 <div class="reg account-create">
@@ -91,8 +91,8 @@
                 <div class="reg reg-btn">
                     <input type="submit" value="Register">
                 </div>
-                <div class="reg ask">
-                    <p>Have account? | <a href="#login">Login</a></p>
+                <div id="ask2" class="reg ask">
+                    <p>Have account? | <span id="ask-login">Login</span></p>
                 </div>
             </form>
         </section>
@@ -153,7 +153,32 @@
         </div>
     </footer>
 
-    <script src="./script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const loginSection = document.getElementById('login');
+            const registerSection = document.getElementById('register');
+            const askLogin = document.getElementById('ask-login');
+            const askRegister = document.getElementById('ask-register');
+
+            loginSection.classList.add('active');
+
+            askLogin.addEventListener('click', function () {
+                loginSection.classList.add('active');
+                registerSection.classList.remove('active');
+            });
+
+            askRegister.addEventListener('click', function () {
+                registerSection.classList.add('active');
+                loginSection.classList.remove('active');
+            });
+        });
+    </script>
+
+    <script src="./scripts/script-main.js"></script>
+    <script src="./scripts/checkDB.js"></script>
+    <script src="./scripts/loginRegisterHandler.js"></script>
+    <script src="./scripts/outsideBound.js"></script>
+    <script src="./scripts/scroll-handler.js"></script>
 </body>
 
 </html>

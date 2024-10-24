@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Equity Finance</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./css/account.css">
     <link rel="stylesheet" href="./css/burger.css">
     <link rel="stylesheet" href="./css/main-style.css">
@@ -21,7 +20,7 @@
 </head>
 
 <body>
-    <header class="">
+    <header>
         <nav>
             <div id="logo">
                 <img src="./resources/photo_2024-10-19_14-21-16.png" alt="Logo">
@@ -39,23 +38,22 @@
 
             <div class="account" id="account">
                 <div class="acc-container">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="acc-svg"
+                    <svg xmlns="http://www.w3.org/2000/svg" class="acc-svg" id="acc-svg"
                         viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                         <path fill="#ffbf69"
                             d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z" />
                     </svg>
-                    <div class="profile">
-                        <img src="" alt="">
+                    <div id="profile" class="profile">
                         <a href="./profile.html">Account Information</a>
-                        <a href="./logout.html">Logout</a>
+                        <a href="#" class="logout">Logout</a>
                     </div>
-                    <div class="login-register">
+                    <div id="login-register" class="login-register">
                         <a href="./login-register.html">Login/Register</a>
                     </div>
                 </div>
             </div>
 
-            <div class="burger">
+            <div class="burger" id="burger">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -66,8 +64,9 @@
     <main>
         <section class="hero" id="hero">
             <div class="def">
-                <h1 class="typing"></h1>
-                <h2>where we believe in transforming dreams into reality through strategic investment management</h2>
+                <h1 id="typing">Welcome to Equity Finance</h1>
+                <span class="cursor"></span>
+                <h2>where we believe in transforming dreams into reality through strategic investment management.</h2>
                 <div class="img-container">
                     <img src="./resources/photo_2024-10-20_17-05-21.jpg" alt="">
                 </div>
@@ -112,14 +111,14 @@
                 Our Services
             </h1>
             <div class="investment">
-                <h2>Investment Management</h2>
+                <h3>Investment Management</h3>
                 <p>We provide personalized investment strategies based on your risk tolerance, financial objectives, and
                     time horizon. Our team of experts monitors market trends and adjusts portfolios to ensure optimized
                     growth while managing risks.</p>
                 <div class="subscribe"><a href="./plans.html">See plans</a></div>
             </div>
             <div class="automated">
-                <h2>Automated Trading Solutions</h2>
+                <h3>Automated Trading Solutions</h3>
                 <p>For clients looking for a more hands-off approach, we offer automated trading services. Utilizing
                     advanced algorithms and market data, we manage trades on your behalf, ensuring efficient and timely
                     execution.</p>
@@ -211,7 +210,11 @@
         </div>
     </footer>
 
-    <script src="./script.js"></script>
+    <script src="./scripts/script-main.js"></script>
+    <script src="./scripts/checkDB.js"></script>
+    <script src="./scripts/loginRegisterHandler.js"></script>
+    <script src="./scripts/outsideBound.js"></script>
+    <script src="./scripts/scroll-handler.js"></script>
 
 </body>
 

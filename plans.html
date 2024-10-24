@@ -18,108 +18,69 @@
     <link rel="stylesheet" href="./css/plans.css">
     <link rel="stylesheet" href="./css/profile.css">
     <link rel="stylesheet" href="./css/login-page.css">
-
-    <style>
-        #nav-buttons {
-            display: flex;
-            position: relative;
-            top: 0;
-            height: max-content;
-            flex-grow: 1;
-            justify-content: flex-end;
-        }
-
-        #nav-buttons ul li {
-            padding: 0;
-        }
-    </style>
 </head>
 
 <body>
-    <header class="">
-        <nav>
+    <div class="header">
+        <div class="plans-nav">
             <div id="logo">
                 <a href="./index.html"><img src="./resources/photo_2024-10-19_14-21-16.png" alt="Logo">
                 </a>
             </div>
-            <div id="nav-buttons">
+            <div id="plans-buttons">
                 <ul>
                     <li><a href="./index.html#hero">Home</a></li>
                 </ul>
             </div>
-
-            <div class="account" id="account">
-                <div class="acc-container">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="acc-svg"
-                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                        <path fill="#a5a345"
-                            d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z" />
-                    </svg>
-                    <div class="profile">
-                        <a href="./profile.html">Account Information</a>
-                    </div>
-                    <div class="login-register">
-                        <a href="./login-register.html">Login/Register</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
+        </div>
+    </div>
 
     <main>
-        <section id="hero" class="plans">
+        <section id="plans" class="plans">
             <div class="container">
-                <div class="col col1">
+                <div class="col col1" id="basic-plan">
                     <div class="heading">
-                        <h3>Free Plan</h3>
+                        <h3>Basic Plan</h3>
                     </div>
                     <div class="price">
-                        <h1>$0.00</h1>
+                        <h1>$19.99 /<strong> month</strong>
+                        </h1>
                     </div>
                     <div class="features">
-                        <p>Includes</p>
                         <ul>
-                            <li>1</li>
-                            <li>2</li>
-                            <li>3</li>
-                            <li>4</li>
-                            <li>5</li>
+                            <li>✓ Ideal for beginners looking to start investing with lower commitment.</li>
+                            <li>✓ Limited access to trading strategies and market insights.</li>
+                            <li>✓ Weekly reports to help keep track of progress.</li>
                         </ul>
                     </div>
                 </div>
-                <div class="col col2">
+                <div class="col col2" id="#standard-plan">
                     <div class="heading">
-                        <h3>Pro Plan</h3>
+                        <h3>Standard Plan</h3>
                     </div>
                     <div class="price">
-                        <h1>$4.99</h1>
+                        <h1>$99.99 / <strong>month</strong></h1>
                     </div>
                     <div class="features">
-                        <p>Includes</p>
                         <ul>
-                            <li>1</li>
-                            <li>2</li>
-                            <li>3</li>
-                            <li>4</li>
-                            <li>5</li>
+                            <li>Best for intermediate investors wanting more advanced strategies.</li>
+                            <li>Daily investment reports and full access to your AR and Morning Glory strategies.</li>
+                            <li>Priority support for faster responses to inquiries.</li>
                         </ul>
                     </div>
                 </div>
-                <div class="col col3">
+                <div class="col col3" id="premium-plan">
                     <div class="heading">
-                        <h3>Advanced Plan</h3>
+                        <h3>Premium Plan</h3>
                     </div>
                     <div class="price">
-                        <h1>$9.99</h1>
+                        <h1>$199.99 / <strong>month</strong></h1>
                     </div>
                     <div class="features">
-                        <p>Includes</p>
                         <ul>
-                            <li>1</li>
-                            <li>2</li>
-                            <li>3</li>
-                            <li>4</li>
-                            <li>5</li>
+                            <li>Perfect for serious investors who want to maximize returns with premium insights.</li>
+                            <li>VIP support with personal portfolio analysis and exclusive tips.</li>
+                            <li>Full access to educational resources, including masterclasses and market analysis.</li>
                         </ul>
                     </div>
                 </div>
