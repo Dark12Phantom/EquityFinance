@@ -1,27 +1,177 @@
-.profile.show,
-.login-register.show {
-    position: absolute;
-    top: 100px;
-    right: 0;
-    color: white;
-    height: max-content;
-    background: #ff9f1c;
-    width: 15em;
-    padding: 30px;
-    text-align: center;
-    border-radius: 30px;
-    border: 0.1px solid #ff9f1c;
+section {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.profile,
-.login-register {
+.profile-container {
+    height: max-content;
+    display: flex;
+    width: 100%;
+    background: #868686;
+    flex-direction: column;
+    padding: 30px;
+}
+
+#acc-profile {
+    padding-top: 200px;
+    margin: 0;
+}
+
+.first-row {
+    height: 50px;
+    width: 100%;
+}
+
+.first-row h1,
+.first-row h2 {
+    font-size: 1.3em;
+}
+
+.profile-name {
+    display: flex;
+}
+
+.info {
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
+}
+
+.info p input {
+    width: 100%;
+    border: none;
+    height: 30px;
+}
+
+.info p {
+    display: flex;
     align-items: center;
 }
 
-.profile a,
-.login-register {
+.info-row {
+    display: flex;
+    gap: 90px;
+    margin-top: 50px;
+}
+
+.info-row p {
+    font-size: 18px;
+    width: 150px;
+}
+
+#password {
+    position: relative;
+}
+
+#password a svg {
+    width: 10px;
+    align-items: center;
+    vertical-align: middle;
+}
+
+#password a {
+    text-decoration: none;
+    color: greenyellow;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    font-size: 10px;
+    width: 200px;
+}
+
+.profile-nav {
+    display: flex;
+    width: 100%;
+    position: initial;
+}
+
+#navbuttons ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+
+}
+
+#mavbuttons {
+    margin-left: 100px;
+}
+
+#navbuttons ul li a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+#change-password h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+#change-password {
+    padding: 30px;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 30px;
+    width: 400px;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+#change-password label {
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.1em;
-    padding-top: 30px;
+}
+
+.confirm-change {
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+#close-btn {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 20px;
+    top: 10px;
+    border-radius: 50%;
+    background-color: #5e5e5e4d;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+}
+
+#close-btn span {
+    position: absolute;
+    background: #000;
+    width: 20px;
+    height: 2px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#close-btn span:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+#close-btn span:nth-child(2) {
+    transform: rotate(-45deg);
+}
+
+#change-password input {
+    border: 1px solid #2ec4b6;
+    width: 100%;
+    cursor: pointer;
+}
+
+.blur {
+    filter: blur(5px);
 }

@@ -1,41 +1,79 @@
-section .plans {
-    padding: 0;
-    margin: 0;
+.header {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    background-color: #2ec4b6;
 }
 
-.plans .container {
+.plans-nav {
     display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin: auto 50px;
+}
+
+.plans {
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#plans-buttons {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#plans-buttons ul {
+    list-style: none;
+}
+
+#plans-buttons ul li a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: white;
+    font-weight: 500;
+}
+
+.container {
+    padding: 0;
+    margin: 0;
+    gap: 40px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
 }
 
 .col {
+    background-color: #fff;
+    padding: 30px;
+    height: 500px;
+    margin-top: 30px;
     border: #ff9f1c solid 1px;
-    margin: 2em;
+    box-shadow: 0 5px 10px 0 black;
     border-radius: 20px;
-    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
 .col h3 {
-    font-size: 2em;
     color: #2ec4b6;
+    font-size: 1.9em;
 }
 
-.col:hover {
-    transform: scale(1.1);
+.col h1 {
+    font-size: 1.8em;
 }
 
-.col ul {
-    padding-left: 20px;
+.col strong {
+    font-weight: 200;
+    font-size: 0.9em;
 }
 
-.col ul li {
-    list-style-type: none;
-    position: relative;
-    padding-left: 20px;
-}
-
-.col ul li::before {
-    content: '✓';
-    position: absolute;
-    left: 0;
-    color: green;
+.col div:nth-child(2),
+.col div:nth-child(3) {
+    margin-top: 50px;
 }

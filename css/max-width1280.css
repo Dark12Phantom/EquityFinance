@@ -1,4 +1,4 @@
-@media screen and (max-width: 1280px) {
+@media screen and (min-width: 1025px) {
 
     h1,
     h2,
@@ -14,13 +14,7 @@
         margin: 0;
     }
 
-    .plans .container {
-        flex-direction: column;
-    }
+    .plans .container {}
 }
 
-@media screen and (max-width: 1366px) {
-    .plans .container {
-        flex-direction: column;
-    }
-}
+@media screen and (max-width: 1366px) {}
