@@ -19,41 +19,27 @@
     <link rel="stylesheet" href="./css/profile.css">
     <link rel="stylesheet" href="./css/login-page.css">
     <link rel="stylesheet" href="./css/login-page.css">
-
-    <style>
-        #nav-buttons {
-            display: flex;
-            position: relative;
-            top: 0;
-            height: max-content;
-            flex-grow: 1;
-            justify-content: flex-end;
-        }
-
-        #nav-buttons ul li {
-            padding: 0;
-        }
-    </style>
 </head>
 
 <body>
     <header class="">
-        <nav>
+        <div class="login-nav">
             <div id="logo">
                 <a href="./index.html"><img src="./resources/photo_2024-10-19_14-21-16.png" alt="Logo">
                 </a>
             </div>
-            <div id="nav-buttons">
+            <div id="login-buttons">
                 <ul>
                     <li><a href="./index.html#hero">Home</a></li>
                 </ul>
             </div>
-        </nav>
+        </div>
     </header>
 
     <main>
         <section id="login">
             <form action="">
+                <h1>Login</h1>
                 <div class="log uname">
                     <label for="uname">Username: </label>
                     <input type="email" name="uname" id="uname" placeholder="example@yahoo.com">
@@ -74,6 +60,7 @@
 
         <section id="register">
             <form action="">
+                <h1>Register</h1>
                 <div class="reg info">
                     <label for="fname">First Name: </label>
                     <input type="text" name="fname" id="fname" placeholder="First Name">
@@ -91,6 +78,7 @@
                 <div class="reg reg-btn">
                     <input type="submit" value="Register">
                 </div>
+                <hr>
                 <div id="ask2" class="reg ask">
                     <p>Have account? | <span id="ask-login">Login</span></p>
                 </div>
