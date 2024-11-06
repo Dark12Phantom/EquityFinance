@@ -1,1 +1,618 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+/* Color Palette
+        #522258
+        #8C3061
+        #C63C51
+        #D95F59
+*/
+
+/* Default Style */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #C63C51;
+}
+
+p,
+a {
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #8C3061;
+}
+
+section {
+    height: max-content;
+    width: 100%;
+}
+
+svg {
+    width: 50px;
+}
+
+/* Navigation Bar Styling */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    width: 90%;
+    background-color: #ffffff;
+}
+
+#logo {
+    width: 90px;
+    height: 90px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.navigation ul {
+    display: flex;
+    gap: 60px;
+}
+
+.navigation ul li {
+    list-style: none;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #522258;
+}
+
+#close-nav-btn {
+    height: 20px;
+    display: none;
+}
+
+.more {
+    height: 50px;
+    width: 50px;
+    display: none;
+}
+
+.more img {
+    width: 100%;
+    height: 100%;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.profile p {
+    background-color: #8C3061;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile svg {
+    width: 40px;
+    height: 40px;
+    background-color: #8C3061;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+}
+
+#login-register-profile {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2;
+    position: absolute;
+    top: 6rem;
+    background: #C63C51;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+#account-info {
+    display: none;
+    flex-direction: column;
+    background: #C63C51;
+    line-height: 2;
+    position: absolute;
+    top: 6rem;
+    padding: 30px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#account-info.active {
+    display: flex;
+}
+
+#account-info a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+#click-to-expand {
+    display: none;
+}
+
+#click-to-expand.active {
+    display: flex;
+}
+
+#login-register-profile.active {
+    display: flex;
+}
+
+#login-register-profile a {
+    color: white;
+    text-decoration: none;
+}
+
+#registered-profile {
+    display: none;
+    background-image: radial-gradient(#ffffff00 30%, #000 90%);
+    border-radius: 50%;
+}
+
+#registered-profile.active {
+    display: flex;
+}
+
+#registered-profile img {
+    width: 50px;
+    height: 50px;
+}
+
+#log-out {
+    padding: 20px;
+    font: 1.5rem 'Montserrat', sans-serif;
+    color: #fff;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* Home Style */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+#home h2 {
+    margin: 50px 0;
+    font-size: 2rem;
+}
+
+#belief {
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.cards {
+    display: flex;
+    width: 100%;
+    gap: 90px;
+}
+
+.cards p {
+    color: #ffffff;
+}
+
+.belief,
+.mission,
+.values {
+    margin: 30px;
+    background-color: #522258af;
+    width: 600px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    justify-content: flex-start;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn {
+    font-size: 1.3rem;
+    gap: 30px;
+    display: flex;
+    margin-top: 50px;
+}
+
+.btn a:nth-child(1) {
+    background-color: #D95F59;
+    color: white;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: .3s ease;
+    font-weight: 500;
+}
+
+.btn a:nth-child(1):hover {
+    background-color: #d95f5993;
+    color: black;
+}
+
+.btn a:nth-child(2) {
+    background-color: #8C3061;
+    color: white;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: .3s ease;
+    font-weight: 500;
+}
+
+.btn a:nth-child(2):hover {
+    background-color: #8C306193;
+    color: black;
+}
+
+
+/* Offer Styling */
+#offers {
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#offers h2 {
+    font-size: 1.8rem;
+}
+
+.offer-cards {
+    display: flex;
+    width: 900px;
+    margin-top: 50px;
+}
+
+.investment,
+.automation {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    background-color: #522258af;
+    padding: 50px;
+    border-radius: 5px;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.investment p,
+.automation p {
+    color: #fff;
+}
+
+.see-plans a {
+    background-color: #D95F59;
+    color: white;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: .3s ease;
+    font-weight: 500;
+}
+
+.see-plans a:hover {
+    background-color: #8C306193;
+    color: black;
+}
+
+/* Register Style */
+#register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(-60deg, #522258 50%, #2f1333 50%);
+    height: 40vh;
+}
+
+.columns {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grab {
+    font-size: 1.6rem;
+}
+
+.grab p {
+    color: #ffffffab;
+    margin-left: 2rem;
+}
+
+.register {
+    font-size: 1.3rem;
+    font-weight: 400;
+    width: 650px;
+    text-align: center;
+}
+
+.register p {
+    color: #ffffffab;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.register hr {
+    border: #522258 1px solid;
+    margin: 1rem auto;
+}
+
+.register a {
+    text-decoration: none;
+    padding: 5px;
+    color: #000;
+    border-radius: 5px;
+    background: #C63C51;
+    transition: .3s ease;
+}
+
+#register hr {
+    border: #52225875 1px solid;
+    margin: 30px auto;
+    width: 100%;
+}
+
+#register a:hover {
+    background: #8C3061;
+    color: #fff;
+}
+
+#register button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: #D95F59;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 3px;
+}
+
+#register form {
+    display: flex;
+    flex-direction: column;
+}
+
+#register form input {
+    margin: 10px;
+    height: 1rem;
+    border: solid #C63C51 1px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#register label {
+    vertical-align: middle;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#register #close1,
+#register #close2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background-color: #2f13339d;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#register #close1 svg,
+#register #close2 svg {
+    width: 15px;
+    padding: 5px;
+}
+
+#create-account {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    flex-direction: column;
+    height: max-content;
+    background: #d95f5980;
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#create-account.active {
+    display: flex;
+}
+
+#create-account a,
+#login-account a {
+    text-decoration: none;
+    color: #000;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#create-account h3,
+#login-account h3 {
+    font-size: 2rem;
+}
+
+#create-account p,
+#login-account p {
+    color: #fff;
+    text-align: center;
+}
+
+#login-account.active {
+    display: flex;
+}
+
+#login-account {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+    background: #d95f5980;
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+
+
+/* Footer Style */
+
+footer {
+    background-color: #522258;
+    display: block;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.footer-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-col h3 {
+    font-size: 1.8rem;
+}
+
+.footer-col ul li {
+    list-style: none;
+    margin-left: 2rem;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 1.5;
+    transition: .3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #D95F59;
+}
+
+.footer-col p {
+    line-height: 1.8;
+    color: #fff;
+    margin-left: 1rem;
+}
+
+.footer-col input {
+    height: 1.8rem;
+    margin-top: 1rem;
+}
+
+#email-news {
+    width: 70%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+#submit {
+    width: 25%;
+    border-radius: 5px;
+    background: #C63C51;
+    border: none;
+    height: 40px;
+
+}
+
+.copyright {
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.copyright p {
+    color: #fff;
+}
+
+.copyright .links {
+    display: flex;
+    width: 150px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.links svg {
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    background: #7979798a;
+    padding: 20px;
+    transition: .3s ease;
+}
+
+.links svg:hover {
+    background: #aaaaaa8a;
+}

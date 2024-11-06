@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* Color Palette
+        #522258
+        #8C3061
+        #C63C51
+        #D95F59
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+/* Navigation Style */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    width: 90%;
+    background-color: #ffffff;
+}
+
+#logo {
+    width: 90px;
+    height: 90px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.navigation ul {
+    display: flex;
+    gap: 60px;
+}
+
+.navigation ul li {
+    list-style: none;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #522258;
+}
+
+#close-nav-btn {
+    height: 20px;
+    display: none;
+}
+
+.more {
+    height: 50px;
+    width: 50px;
+    display: none;
+}
+
+.more img {
+    width: 100%;
+    height: 100%;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.profile p {
+    background-color: #8C3061;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile svg {
+    width: 40px;
+    height: 40px;
+    background-color: #8C3061;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+}
+
+#login-register-profile {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2;
+    position: absolute;
+    top: 6rem;
+    background: #C63C51;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+#account-info {
+    display: none;
+    flex-direction: column;
+    background: #C63C51;
+    line-height: 2;
+    position: absolute;
+    top: 6rem;
+    padding: 30px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#account-info.active {
+    display: flex;
+}
+
+#account-info a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+#click-to-expand {
+    display: none;
+}
+
+#click-to-expand.active {
+    display: flex;
+}
+
+#login-register-profile.active {
+    display: flex;
+}
+
+#login-register-profile a {
+    color: white;
+    text-decoration: none;
+}
+
+#registered-profile {
+    display: none;
+    background-image: radial-gradient(#ffffff00 30%, #000 90%);
+    border-radius: 50%;
+}
+
+#registered-profile.active {
+    display: flex;
+}
+
+#registered-profile img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Contact Home Style */
+
+#contact-home {
+    width: 100vw;
+    height: 100vh;
+    letter-spacing: 1px;
+    line-height: 2rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 50px;
+}
+
+.col1,
+.col2 {
+    width: 40%;
+    background: #5222588e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.col1 {
+    line-height: 2;
+}
+
+.container h4 {
+    font-size: 2rem;
+    color: #C63C51;
+}
+
+.container h5 {
+    font-size: 1.6rem;
+    color: #D95F59;
+    margin-bottom: 5px;
+}
+
+.container h6 {
+    font-size: 1.4rem;
+    color: #D95F59;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 2vw;
+    width: 90%;
+}
+
+.container textarea {
+    width: 100%;
+    height: 20rem;
+    resize: none;
+    border-radius: 5px;
+    border: none;
+}
+
+.container label {
+    color: #C63C51;
+    margin-bottom: 20px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.container p {
+    color: #C63C51;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.container input {
+    width: 100%;
+    height: 2rem;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.container input[type="radio"] {
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+    margin-left: 10px;
+}
+
+.container input[type="submit"] {
+    border-radius: 10px;
+    background: #8C3061;
+    border: #C63C51 1px solid;
+    font-family: 'Montserrat', sans-serif;
+    width: 70%;
+    height: 2.5rem;
+    font-size: 1.3rem;
+    color: #ffffff;
+}
+
+.problem-type label {
+    font-size: 1rem;
+    vertical-align: middle;
+}
+
+.social-accounts {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-accounts a {
+    width: 3rem;
+    height: 3rem;
+    background: #8C3061;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.social-accounts svg {
+    width: 20px;
+}
+
+/* Crete Account */
+
+#close1,
+#close2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background-color: #2f13339d;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#close1 svg,
+#close2 svg {
+    width: 15px;
+    padding: 5px;
+}
+
+#create-account {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    flex-direction: column;
+    height: max-content;
+    background: #d95f5980;
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#create-account.active {
+    display: flex;
+}
+
+#create-account a,
+#login-account a {
+    text-decoration: none;
+    color: #000;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#create-account h3,
+#login-account h3 {
+    font-size: 2rem;
+}
+
+#create-account p,
+#login-account p {
+    color: #fff;
+    text-align: center;
+}
+
+#login-account.active {
+    display: flex;
+}
+
+#login-account {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+    background: #d95f5980;
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    margin: 10px;
+    height: 1rem;
+    border: solid #C63C51 1px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+form label {
+    vertical-align: middle;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+form hr {
+    border: #52225875 1px solid;
+    margin: 30px auto;
+    width: 100%;
+}
+
+form button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: #D95F59;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 3px;
+}
+
+form a:hover {
+    background: #8C3061;
+    color: #fff;
+}
